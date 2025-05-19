@@ -1,77 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WiFi Login</title>
+  <title>Village WiFi Login</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1d4350, #a43931);
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       height: 100vh;
-      background: #f0f0f0;
       margin: 0;
+      color: white;
     }
     .login-container {
-      background: #fff;
+      background: rgba(0, 0, 0, 0.6);
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 100%;
+      width: 90%;
       max-width: 400px;
-    }
-    h2 {
       text-align: center;
+    }
+    .login-container h1 {
       margin-bottom: 20px;
     }
-    .input-group {
-      margin-bottom: 20px;
-    }
-    .input-group label {
-    font-weight: bold;
-    }
-    .input-group input {
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-      margin-top: 8px;
-    }
-    .btn {
-      width: 100%;
+    .login-container input {
+      width: 90%;
       padding: 12px;
-      background: #4CAF50;
-      color: #fff;
+      margin: 10px 0;
       border: none;
       border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
     }
-    .btn:hover {
-      background: #45a049;
+    .login-container button {
+      padding: 12px 20px;
+      background-color: #f9a825;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 95%;
+    }
+    .footer {
+      margin-top: 20px;font-size: 0.9em;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-
   <div class="login-container">
-    <h2>WiFi Login</h2>
-    <form action="your_action_page" method="post">
-      <div class="input-group">
-        <label for="username">Name</label>
-        <input type="text" id="username" name="username" placeholder="Enter your name" required>
-      </div>
-
-      <div class="input-group">
-        <label for="phone">Phone Number</label>
-        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
-      </div>
-
-      <button type="submit" class="btn">Login to WiFi</button>
+    <h1>🌐 Village WiFi Login</h1>
+    <p>এক কাপ চা আর ১০ মিনিট ফ্রি WiFi 😍</p>
+    <form action="#">
+      <input type="text" placeholder="আপনার নাম" required><br>
+      <input type="tel" placeholder="মোবাইল নম্বর" required><br>
+      <button type="submit">লগইন করুন</button>
     </form>
+    <div class="footer">
+      &copy; 2025 Village WiFi | ডিজাইন: আপনি নিজেই ❤️
+    </div>
   </div>
-
 </body>
 </html>
